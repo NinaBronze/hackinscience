@@ -3,4 +3,4 @@ Bonjour = ["Hello Word"]
 for mot in Bonjour:
     while i <= 100:
         print(mot)
-        i = i+1 
+        i = i+1
