@@ -1,5 +1,4 @@
-i = 0
-Bonjour = ["Hello Word"]
+Bonjour = ["Hello World"]
 for mot in Bonjour:
     while i < 100:
         print(mot)
