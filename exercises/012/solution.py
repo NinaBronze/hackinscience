@@ -1,2 +1,3 @@
 from math import *
-print factorial(27)
+a = factorial(27)
+print(a)
