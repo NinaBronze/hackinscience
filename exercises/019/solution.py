@@ -1,5 +1,5 @@
 import sys
-if len(sys.argv) > 12:
+if len(sys.argv) > 2:
     a = int(sys.argv[1])
     b = int(sys.argv[2])
     print(a + b)
