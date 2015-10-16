@@ -1,4 +1,5 @@
 a = 0
 for i in range(101):
-    a = a + i
+        if i % 2 == 0:
+            a = a + 1
 print(a)
