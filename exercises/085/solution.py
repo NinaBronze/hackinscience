@@ -2,7 +2,7 @@ import operator
 
 
 def sort_a_list(l):
-    a = sorted(l)
+    a = sorted(l, reverse=True)
     print(a)
 
 
