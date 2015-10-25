@@ -1,2 +1,7 @@
 import time
-print time.strftime('Today is %Y-%B-%d and it is %H:%M:%S',time.localtime())
+import datetime
+from datetime import date
+date = time.strftime('%Y-%m-%d')
+time = time.strftime('%H:%M:%S')
+print('Today is', date, 'and it is', time)
+
