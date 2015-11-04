@@ -12,11 +12,9 @@ def affair_meet(amant1, amant2, amant3):
     rencontre = []
     for i in amant2:
         for j in amant3:
-            if i == j:
-                rencontre.append(i)
-    for k in rencontre:
-        for l in amant1:
-            if k == l:
-                rencontre.remove(k)
+            for k in amant1:
+                if i != k:
+                    if i == j:
+                        rencontre.append(i)
     rencontre = set(rencontre)
     return(rencontre)
