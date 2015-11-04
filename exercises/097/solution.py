@@ -5,7 +5,7 @@ def love_meet(amant1, amant2):
             if i == j:
                 rencontre.append(i)
     rencontre = set(rencontre)
-    print(rencontre)
+    return(rencontre)
 
 
 def affair_meet(amant1, amant2, amant3):
@@ -19,4 +19,4 @@ def affair_meet(amant1, amant2, amant3):
             if k == l:
                 rencontre.remove(k)
     rencontre = set(rencontre)
-    print(rencontre)
+    return(rencontre)
