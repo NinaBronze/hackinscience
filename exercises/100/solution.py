@@ -6,4 +6,4 @@ station = {
  'longitude': 2.416170724425901
 }
 for cle, valeur in station.items():
-    print("{} {}".format(cle, valeur))
+    print(cle, valeur)
