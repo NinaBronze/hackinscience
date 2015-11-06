@@ -9,7 +9,7 @@ def select_student(classe, note):
             bon.append(i)
         else:
             mauvais.append(i)
-    dico = {'Accepted' : \
+    dico = {'Accepted': \
             sorted(bon, key=operator.itemgetter(1), reverse=True),
-            'Refused' : sorted(mauvais, key=operator.itemgetter(1))}
+            'Refused': sorted(mauvais, key=operator.itemgetter(1))}
     return(dico)
