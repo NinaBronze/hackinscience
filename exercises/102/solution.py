@@ -55,6 +55,6 @@ def check_my_city(cityname):
         return "Sorry! No station for your city has been found!"
     else:
         station = {'stations_nb': a,
-                'zip_code': code,
-                'city': cityname}
+                   'zip_code': code,
+                   'city': cityname}
         return(station)
