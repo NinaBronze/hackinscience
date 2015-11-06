@@ -50,7 +50,8 @@ def check_my_city(cityname):
     for i in velib:
         if i["city"].find(cityname) == 0:
             a += 1
-            code.append(i["zip"])
+            sans_tiret = i["zip"][0:5]
+            code.append(sans_tiret)
     if a == 0:
         return "Sorry! No station for your city has been found!"
     else:
