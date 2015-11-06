@@ -43,6 +43,7 @@ velib = [{
 # Fonctions
 #########################################
 
+
 def check_my_city(cityname):
     a = 0
     code = []
@@ -53,8 +54,8 @@ def check_my_city(cityname):
     if a == 0:
         return "Sorry! No station for your city has been found!"
     else:
-        station = { 'stations_nb': a,
-            'zip_code': code,
-            'city': cityname       
-            }
+        station = 
+            {'stations_nb': a,
+                'zip_code': code,
+                'city': cityname}
         return(station)
