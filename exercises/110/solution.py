@@ -9,8 +9,8 @@ if len(sys.argv) < 4:
     print("usage: solution.py a_number (an_operator +-*/%^) a_number")
 
 elif operateur.find(op) != 0:
-    print("usage: solution.py a_number (an_operator +-*/%^) a_number")
-    
+        print('input error')
+        sys.exit()
 
 else:
 
