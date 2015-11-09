@@ -1,12 +1,18 @@
 import sys
 
+operateur = '+-*/%^'
+a = sys.argv[1]
+op = sys.argv[2]
+b = sys.argv[3]
+    
 if len(sys.argv) < 4:
     print("usage: solution.py a_number (an_operator +-*/%^) a_number")
 
+elif operateur.find(op) != 0:
+    print("usage: solution.py a_number (an_operator +-*/%^) a_number")
+    
+
 else:
-    a = sys.argv[1]
-    op = sys.argv[2]
-    b = sys.argv[3]
 
     try:
         a = int(a)
