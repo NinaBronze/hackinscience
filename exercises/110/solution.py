@@ -32,7 +32,7 @@ else:
             print(a / b)
 
     if op == '^':
-        print(a ^ b)
+        print(a ** b)
 
     if op == '%':
         print(a % b)
