@@ -10,9 +10,8 @@ op = sys.argv[2]
 b = sys.argv[3]
 
 if operateur.find(op) <= -1:
-    print(operateur.find(op))
     print('input error')
-        
+
 else:
 
     try:
