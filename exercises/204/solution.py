@@ -11,4 +11,4 @@ def perfect_shuffle(deck):
         newdeck.append(b)
     if len(deck1) != len(deck2):
         newdeck.append(deck2[-1])
-    print(newdeck)
+    return(newdeck)
