@@ -1,6 +1,7 @@
 suite = [1, 2]
-if len(suite) < 9:
-    suite.append(suite[-2] + suite[-1])
-    print(suite, end=', ')
-elif len(suite) == 10:
-    print(suite)
+fin = 10
+while len(suite) < fin:
+    suite.append(suite[-1] + suite[-2])
+for i in suite[0:9]:
+    print(i, end=', ')
+print(suite[-1], end=".")
