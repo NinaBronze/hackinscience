@@ -1,0 +1,5 @@
+f = open("words.txt", 'r')
+text = f.read()
+nb = text.count('e')
+print(nb)
+f.close()
