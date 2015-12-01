@@ -1,4 +1,4 @@
-def mil(liste):
+def mul(liste):
     result = 1
     for i in liste:
         result = result * i
