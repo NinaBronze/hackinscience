@@ -1,12 +1,9 @@
 import json
 
-velib = open("velib.json", 'r')
-solution = open("solution.json", 'w')
+velib = json.load(open("velib.json", 'r'))
+mon_rendu = open("solution.json", 'w')
 
-station = json.load(velib)
-a = 0
-
-for i in station:
+for i in velib:
     NAME = i["name"].split(" - ")
     ADDRESS = i["address"].split("- ")
     VILLE = ADDRESS[-1].split(" ")
@@ -14,5 +11,5 @@ for i in station:
     i["name"] = NAME[1]
     i["address"] = ADDRESS[0]
     i["city"] = VILLE[-1]
-station = str(station)
-solution.write(station)
+
+json.dump(velib, mon_rendu)
