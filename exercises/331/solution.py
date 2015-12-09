@@ -4,9 +4,7 @@ from aide import *
 station = open("velib.json", 'r')
 velib = json.load(station)
 solution = open("solution.json", 'w')
-a = 0
 
-#On passe en revue toutes les 1230 stations!!!!
 for i in velib:
     NAME = i["name"].split(" - ")
     i["name"] = " ".join(NAME[1::])
@@ -23,7 +21,6 @@ for i in velib:
                 print(i["address"])
             except ValueError:
                 None
-    print(i)
 
 json.dump(velib, solution)
 solution.close()
