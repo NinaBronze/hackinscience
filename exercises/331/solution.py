@@ -4,11 +4,11 @@ from aide import *
 station = open("velib.json", 'r')
 velib = json.load(station)
 solution = open("solution.json", 'w')
+a = 0
 
 for i in velib:
     NAME = i["name"].split(" - ")
     i["name"] = " ".join(NAME[1::])
-
     ADDRESS = sans_tiret_sans_espace(i["address"])
     for d in ADDRESS:
         if len(d) == 5:
@@ -18,7 +18,6 @@ for i in velib:
                 i["zip_code"] = d
                 i["city"] = ' '.join(ADDRESS[(numero + 1)::])
                 i["address"] = ' '.join(ADDRESS[0:numero])
-                print(i["address"])
             except ValueError:
                 None
 
