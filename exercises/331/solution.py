@@ -5,7 +5,6 @@ station = open("velib.json", 'r')
 velib = json.load(station)
 solution = open("solution.json", 'w')
 
-
 for i in velib:
     NAME = i["name"].split(" - ")
     i["name"] = " ".join(NAME[1::])
@@ -17,7 +16,8 @@ for i in velib:
                 d = int(d)
                 i["zip_code"] = str(d)
                 i["city"] = ' '.join(ADDRESS[(numero + 1)::])
-                i["address"] = ' '.join(ADDRESS[0:numero])
+                i["address"] = ' '.join(ADDRESS[0:(numero)])
+
             except ValueError:
                 None
 
