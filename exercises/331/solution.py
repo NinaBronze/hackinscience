@@ -20,7 +20,7 @@ for i in velib:
 
             except ValueError:
                 None
-    print(i)
+
 json.dump(velib, solution)
 solution.close()
 station.close()
