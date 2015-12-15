@@ -1,7 +1,7 @@
 import folium
 import json
 
-#Fonctions
+# Fonctions
 #####################################
 
 
@@ -41,7 +41,7 @@ def propre(fichier):
     return(velib)
 
 
-#Script
+# Script
 ##################################
 
 map_osm = folium.Map(location=[48.8682170167744, 2.330493511399173])
