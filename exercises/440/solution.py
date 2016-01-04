@@ -6,7 +6,7 @@ def filtered(items, filtre):
         if filtre(i):
             new_items.append(i)
     for j in new_items[0:len(new_items)-1]:
-        print(j, end=',')
+        print(j, end=', ')
     print(new_items[len(new_items)-1])
     return()
 
