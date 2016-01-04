@@ -6,10 +6,9 @@ def filtered(items, filtre):
         if filtre(i):
             new_items.append(i)
     for j in new_items[0:len(new_items)-1]:
-        print(j, end=', ')
-    print(new_items[len(new_items)-1])
-    return()
-
+        a = print(j, end=', ')
+    a = print(new_items[len(new_items)-1])
+    return(a)
 
 if __name__ == '__main__':
     trois = filtered(range(0, 101), lambda x: x % 3 == 0)
