@@ -7,7 +7,7 @@ def filtered(items, filtre):
             new_items.append(i)
     for j in new_items[0:len(new_items)-1]:
         print(j, end=', ')
-    print(new_items[-1])
+    print(new_items[2])
     return()
 
 if __name__ == '__main__':
